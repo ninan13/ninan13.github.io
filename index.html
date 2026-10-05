@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nina | Home</title>
+  <meta name="description" content="Personal homepage for Nina.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="badge">Welcome</div>
+      <h1 class="title">Hi, I'm Nina.</h1>
+      <p class="subtitle">Welcome to my personal corner on the web. Here you'll find my projects, notes, and favorite links.</p>
+      
+      <div class="actions">
+        <a href="https://github.com/ninan13" target="_blank" rel="noopener noreferrer" class="btn primary-btn">
+          GitHub Profile
+        </a>
+        <a href="#projects" class="btn secondary-btn">
+          View Projects
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Quick Links / Shortcuts (handy if used as a browser start page) -->
+      <section class="section">
+        <h2 class="section-title">Quick Links</h2>
+        <div class="grid links-grid">
+          <a href="https://github.com/ninan13" class="card link-card" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">⚡</div>
+            <div class="card-content">
+              <h3>GitHub</h3>
+              <p>Repositories & commits</p>
+            </div>
+          </a>
+          <a href="https://news.ycombinator.com" class="card link-card" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">📰</div>
+            <div class="card-content">
+              <h3>Hacker News</h3>
+              <p>Tech news & discussion</p>
+            </div>
+          </a>
+          <a href="https://stackoverflow.com" class="card link-card" target="_blank" rel="noopener noreferrer">
+            <div class="card-icon">💡</div>
+            <div class="card-content">
+              <h3>Stack Overflow</h3>
+              <p>Q&A for developers</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Projects & Repositories</h2>
+        <div class="grid projects-grid">
+          <div class="card project-card">
+            <div class="card-tag">Repository</div>
+            <h3>Python Course</h3>
+            <p>Exercises, scripts, and assignments from my Python coursework.</p>
+            <div class="card-footer">
+              <a href="https://github.com/ninan13/Python_course" target="_blank" rel="noopener noreferrer">View Repository →</a>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <div class="card-tag">Repository</div>
+            <h3>SQL Course</h3>
+            <p>Database queries, schemas, and relational database exercises.</p>
+            <div class="card-footer">
+              <a href="https://github.com/ninan13/SQL_course" target="_blank" rel="noopener noreferrer">View Repository →</a>
+            </div>
+          </div>
+
+          <div class="card project-card">
+            <div class="card-tag">Home Page</div>
+            <h3>Personal Website</h3>
+            <p>This custom home page site, hosted with GitHub Pages.</p>
+            <div class="card-footer">
+              <a href="https://github.com/ninan13/ninan13.github.io" target="_blank" rel="noopener noreferrer">Source Code →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="card about-card">
+          <p>
+            I'm a developer learning and building software. This site serves as my custom home page and central dashboard for my projects.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Nina. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
